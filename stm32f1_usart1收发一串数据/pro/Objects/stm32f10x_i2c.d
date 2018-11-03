@@ -1,0 +1,12 @@
+.\objects\stm32f10x_i2c.o: ..\lib\src\stm32f10x_i2c.c
+.\objects\stm32f10x_i2c.o: ..\lib\inc\stm32f10x_i2c.h
+.\objects\stm32f10x_i2c.o: ..\user\stm32f10x.h
+.\objects\stm32f10x_i2c.o: ..\comis\core_cm3.h
+.\objects\stm32f10x_i2c.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f10x_i2c.o: ..\user\system_stm32f10x.h
+.\objects\stm32f10x_i2c.o: ..\user\stm32f10x_conf.h
+.\objects\stm32f10x_i2c.o: ..\lib\inc\stm32f10x_gpio.h
+.\objects\stm32f10x_i2c.o: ..\user\stm32f10x.h
+.\objects\stm32f10x_i2c.o: ..\lib\inc\stm32f10x_rcc.h
+.\objects\stm32f10x_i2c.o: ..\lib\inc\stm32f10x_usart.h
+.\objects\stm32f10x_i2c.o: ..\lib\inc\misc.h

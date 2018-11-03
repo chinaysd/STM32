@@ -1,0 +1,12 @@
+.\objects\stm32f10x_dbgmcu.o: ..\lib\src\stm32f10x_dbgmcu.c
+.\objects\stm32f10x_dbgmcu.o: ..\lib\inc\stm32f10x_dbgmcu.h
+.\objects\stm32f10x_dbgmcu.o: ..\user\stm32f10x.h
+.\objects\stm32f10x_dbgmcu.o: ..\comis\core_cm3.h
+.\objects\stm32f10x_dbgmcu.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f10x_dbgmcu.o: ..\user\system_stm32f10x.h
+.\objects\stm32f10x_dbgmcu.o: ..\user\stm32f10x_conf.h
+.\objects\stm32f10x_dbgmcu.o: ..\lib\inc\stm32f10x_gpio.h
+.\objects\stm32f10x_dbgmcu.o: ..\user\stm32f10x.h
+.\objects\stm32f10x_dbgmcu.o: ..\lib\inc\stm32f10x_rcc.h
+.\objects\stm32f10x_dbgmcu.o: ..\lib\inc\stm32f10x_usart.h
+.\objects\stm32f10x_dbgmcu.o: ..\lib\inc\misc.h

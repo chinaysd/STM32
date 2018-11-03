@@ -1,0 +1,16 @@
+.\objects\stm32f10x_it.o: ..\user\stm32f10x_it.c
+.\objects\stm32f10x_it.o: ..\user\stm32f10x_it.h
+.\objects\stm32f10x_it.o: ..\user\stm32f10x.h
+.\objects\stm32f10x_it.o: ..\comis\core_cm3.h
+.\objects\stm32f10x_it.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f10x_it.o: ..\user\system_stm32f10x.h
+.\objects\stm32f10x_it.o: ..\user\stm32f10x_conf.h
+.\objects\stm32f10x_it.o: ..\lib\inc\stm32f10x_gpio.h
+.\objects\stm32f10x_it.o: ..\user\stm32f10x.h
+.\objects\stm32f10x_it.o: ..\lib\inc\stm32f10x_rcc.h
+.\objects\stm32f10x_it.o: ..\lib\inc\stm32f10x_usart.h
+.\objects\stm32f10x_it.o: ..\lib\inc\misc.h
+.\objects\stm32f10x_it.o: ..\user\system.h
+.\objects\stm32f10x_it.o: ..\bsp\bsp_usart1.h
+.\objects\stm32f10x_it.o: ..\TimeOut\TimeOut.h
+.\objects\stm32f10x_it.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
