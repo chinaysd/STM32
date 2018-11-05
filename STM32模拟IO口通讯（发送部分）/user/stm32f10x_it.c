@@ -241,6 +241,41 @@ void TIM6_IRQHandler(void)
 	}
 
 }
+
+static unsigned char Cnt;
+void EXTI0_IRQHandler(void)
+{
+	if(EXTI_GetITStatus(EXTI_Line0) != RESET)
+	{
+		EXTI_ClearITPendingBit(EXTI_Line0);
+		++ Cnt;
+		if(Cnt & 0x01)
+		{
+			Hal_Led_Status(1,1);
+		}
+		else 
+		{
+			Hal_Led_Status(1,0);
+		}
+	}
+}
+
+void EXTI15_10_IRQHandler(void)
+{
+	if(EXTI_GetITStatus(EXTI_Line13) != RESET)
+	{
+		EXTI_ClearITPendingBit(EXTI_Line13);
+		++ Cnt;
+		if(Cnt & 0x01)
+		{
+			Hal_Led_Status(1,1);
+		}
+		else 
+		{
+			Hal_Led_Status(1,0);
+		}
+	}
+}
 /******************************************************************************/
 /*                 STM32F10x Peripherals Interrupt Handlers                   */
 /*  Add here the Interrupt Handler for the used peripheral(s) (PPP), for the  */

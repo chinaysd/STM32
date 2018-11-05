@@ -33,3 +33,4 @@
 .\objects\main.o: ..\bsp\bsp_led.h
 .\objects\main.o: ..\bsp\bsp_basetime.h
 .\objects\main.o: ..\TimeOut\TimeOut.h
+.\objects\main.o: ..\bsp\bsp_key.h

@@ -34,3 +34,4 @@
 .\objects\stm32f10x_it.o: ..\bsp\bsp_led.h
 .\objects\stm32f10x_it.o: ..\bsp\bsp_basetime.h
 .\objects\stm32f10x_it.o: ..\TimeOut\TimeOut.h
+.\objects\stm32f10x_it.o: ..\bsp\bsp_key.h

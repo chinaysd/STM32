@@ -15,12 +15,14 @@ unsigned char Led_Init(unsigned char id)
 		LED_InitStruct.GPIO_Mode = GPIO_Mode_Out_PP;
 		LED_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
 		GPIO_Init(LED1_PORT, &LED_InitStruct);
+		GPIO_SetBits(LED1_PORT,LED1_PIN);
 		return LED_SUCCESS;
 	}
 	else if(id == 1)
 	{
 		LED_InitStruct.GPIO_Pin = LED2_PIN;
 		GPIO_Init(LED2_PORT, &LED_InitStruct);
+		GPIO_SetBits(LED2_PORT,LED2_PIN);
 		return LED_SUCCESS;
 	}
 	return LED_ERROR;
@@ -60,6 +62,10 @@ unsigned char BackCall_LED(unsigned char n,unsigned char (*ptr)(unsigned char))
 	(*ptr)(n);
 	return LED_SUCCESS;
 }
+
+
+
+
 
 
 
