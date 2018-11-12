@@ -13,12 +13,13 @@
 #include "bsp_basetime.h"
 #include "TimeOut.h"
 #include "bsp_key.h"
-//#define TimeOut
+#include "bsp_usart1.h"
+#include "string.h"
 
 
 #define OnLine_Time       1000
 
-
+#define TimeOut
 void System_Init(void);
 void System_Handle(void);
 

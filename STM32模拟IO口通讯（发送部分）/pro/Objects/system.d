@@ -34,3 +34,5 @@
 .\objects\system.o: ..\bsp\bsp_basetime.h
 .\objects\system.o: ..\TimeOut\TimeOut.h
 .\objects\system.o: ..\bsp\bsp_key.h
+.\objects\system.o: ..\bsp\bsp_usart1.h
+.\objects\system.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h

@@ -75,8 +75,6 @@ void Usart1_Init(unsigned int Baud_Value)
 static void Send_Byte(unsigned char data)
 {
 	USART_SendData(USART1,data);
-	//while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) != RESET);
-	//USART_GetFlagStatus(USART1,USART_FLAG_TXE) = RESET;
 	while((USART1->SR&0X40)==0);//µÈ´ý·¢ËÍ½áÊø 
 }
 

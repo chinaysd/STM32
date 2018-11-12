@@ -24,6 +24,15 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
 #include "system.h"
+#include "bsp_usart1.h"
+#include "string.h"
+
+/**********************************************************************************
+ 接收到数据的变量定义
+***********************************************************************************/
+extern unsigned char Rev_Data;
+extern unsigned char Rev_Num;
+
 
 unsigned char u8SenderCnt,u8SendHandCnt,u8SendEndCnt,
 	            u8Send0Cnt,u8Send1Cnt,command=0x02,commandtmp,
@@ -275,6 +284,17 @@ void EXTI15_10_IRQHandler(void)
 			Hal_Led_Status(1,0);
 		}
 	}
+}
+
+
+void USART1_IRQHandler(void)
+{
+	 if(USART_GetITStatus(USART1,USART_IT_RXNE) != RESET)
+	 {
+		  Rev_Serial_IQH();
+		  USART_ClearITPendingBit(USART1,USART_IT_RXNE);
+	 }
+ 
 }
 /******************************************************************************/
 /*                 STM32F10x Peripherals Interrupt Handlers                   */
