@@ -37,3 +37,4 @@
 .\objects\stm32f10x_it.o: ..\bsp\bsp_key.h
 .\objects\stm32f10x_it.o: ..\bsp\bsp_usart1.h
 .\objects\stm32f10x_it.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\objects\stm32f10x_it.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h

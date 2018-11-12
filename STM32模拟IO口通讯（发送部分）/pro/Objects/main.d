@@ -36,3 +36,4 @@
 .\objects\main.o: ..\bsp\bsp_key.h
 .\objects\main.o: ..\bsp\bsp_usart1.h
 .\objects\main.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h

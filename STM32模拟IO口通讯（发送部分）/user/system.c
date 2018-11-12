@@ -33,6 +33,15 @@ void Rev_Serial_Handle(void)
 	}
 }
 
+int fputc(int ch, FILE *f)//重定向，让printf输出到串口
+{
+    USART_SendData(USART1,ch);
+
+    while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+    return ch;
+}
+
+
 void System_Init(void)
 {
 	TimeOutDet_Init();
@@ -54,6 +63,9 @@ void System_Handle(void)
 		if(Counts & 0x01)
 		{
 			//Protocol_Send(0x55,0xff,0x01);
+			printf("yangshunde");
+			printf("大神");
+		  
 		}
 		else 
 		{

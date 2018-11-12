@@ -15,6 +15,7 @@
 #include "bsp_key.h"
 #include "bsp_usart1.h"
 #include "string.h"
+#include "stdio.h"
 
 
 #define OnLine_Time       1000
